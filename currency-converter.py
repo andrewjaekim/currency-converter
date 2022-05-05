@@ -7,9 +7,6 @@ from pprint import PrettyPrinter
 BASE_URL = "https://free.currconv.com/"
 API_KEY = "fead15c2d6df5ed8320c" # unique API assigned to author
 
-# What does this do
-printer = PrettyPrinter()
-
 
 """This function calls the API and returns a something
 This data is then put into a list and then sorted
@@ -69,7 +66,7 @@ def convert(currency1, currency2, amount):
 def main():
     currencies = get_currencies()
 
-    print("//////////////////////////// Currency Converter ////////////////////////////")
+    print("\n//////////////////////////// Currency Converter ////////////////////////////")
     print("\nCommand Options")
     print("List - lists the available currencies")
     print("Exchange - calculate one currency amount to another")
